@@ -1,0 +1,15 @@
+answer: picoCTF{ax8mC0RU6ve_NX85l4ax8mCl_a3eb5ac2}
+
+cukup simple tetapi ini mencakup fundamental linux
+
+1. Extrack apk dengan unzip
+2. sesudah diextrack akan terdapat banyak file dan tidak mungkin satu persatu dicek
+3. jadi gunakan strings * | grep flag, maksud dari * adalah untuk mengecek keseluruh file dengan mencari kalimat fla
+4. akan ditemukan di res/color/flag.txtUT, yang berarti kita sudah menemukan tempatnya
+5. Cek sekali lagi dengan ls -R | grep flag untuk mengkonfirmasi apakah ada dan ketika memasukan command tersebut akan muncul file
+   flag.txt
+6. tetapi karena kita bingung filenya berada di lokasi mana, kita pakai -B 20 sesudah grep (ls -R | grep flag -B 20)
+7. maksud dari command tersebut adalah mencari list (ls) secara rekursif (-R) dengan kalimat (grep "flag") yang sebelum 20 baris, memakai before 
+   20 baris agar bisa diketahui lokasi flag tersebut berada dimana
+8. baca file flag.txt tersebut dengan cat res/color/flag.txt dan ternyata kalimat itu adalah hex
+9. Buka cyberchef dan konversi from hex dan selamat flag didapatkan

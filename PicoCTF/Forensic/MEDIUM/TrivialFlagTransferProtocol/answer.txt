@@ -1,0 +1,16 @@
+picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
+
+tricky wireshark
+
+1. Karena ini tftp maka terdiri dari
+    - read request (1)
+    - write request (2)
+    - data packet (3)
+    
+2.  Carilah data packet awal dan export dengan file -> export object -> tftp -> save all
+3. akan muncul .txt dan picture dari bmp, ketika baca txt maka akan muncul karakter acak dan encode dengan rot13
+4. Akan muncul kata blablabla, dan fokus dimana mereka memakai ./program.deb dan coba install tersebut dengan sudo apt install ./program.deb
+5. setelah install akan muncul suruh install steghide dan install itu lalu jalankan 'steghide extract -sf <picture.bmp>
+6. Setelah menjalankan itu akan muncul passphrase yang berarti membutuhkan password, kita balik lagi ke kata rot13 dan ada petunjuk
+   "HID IT WITH -DUE DILIGENCE" due diligence tersebut bisa menjadi password
+7. Jalankan semua picture dengan steghide yang bisa dan selamat 

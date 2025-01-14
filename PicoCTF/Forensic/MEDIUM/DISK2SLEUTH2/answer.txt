@@ -1,0 +1,10 @@
+fls -o 2048 nameimg.img 123
+
+fls = command untuk melist folder/file di dalam img
+-o = output
+2048 = mulai banyak memori dalam .img
+nameimg.img = nama file img
+123 = address setiap file atau folder (dicek dengan fls tanpa ini terlebih dahulu)
+
+icat -o 2048 nameimg.img 123
+membaca file

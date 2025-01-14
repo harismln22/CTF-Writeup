@@ -1,0 +1,33 @@
+answer:picoCTF{71m3_7r4v311ng_p1c7ur3_3e336564}
+
+
+karena disuruh mengubah semua tanggal menjadi 1970:00:00:00
+1. Download exiftool terlebih dahulu, lalu cek file.jpg dengan exiftool file.jpg
+2. akan terlihat kalau semua date seperti ini
+
+File Modification Date/Time     : 2024:08:11 09:21:36+07:00
+File Access Date/Time           : 2024:08:11 09:21:35+07:00
+File Inode Change Date/Time     : 2024:08:11 09:21:49+07:00
+yang atas ini tidak perlu diubah tetapi yang bawah perlu
+
+Modify Date                     : 2023:11:20 15:46:23
+
+Date/Time Original              : 2023:11:20 15:46:23
+Create Date                     : 2023:11:20 15:46:23
+
+Time Stamp                      : 2023:11:21 03:46:21.420+07:00
+
+Create Date                     : 2023:11:20 15:46:23.703
+Date/Time Original              : 2023:11:20 15:46:23.703
+Modify Date                     : 2023:11:20 15:46:23.703
+
+3. exiftool bisa merubah semua dengan
+    exiftool "-AllDates=1970:01:01 00:00:00.001" "-SubSecCreateDate=1970:01:01 00:00:00.001" "-SubSecModifyDate=1970:01:01 00:00:00.001" "-SubSecDateTimeOriginal=1970:01:01 00:00:00.001" <file.jpg>
+    
+4. berhasil tetapi akan ada yang salah diakhir, yaitu dimana timestamp tidak berubah dan ini tidak bisa diedit oleh exiftool, caranya
+5. karena ini harus menggunakan binary, kita cek gambar dengan strings file.jpg dan cari sesuatu yang berhubungan dengan Data image dan di paling akhir akan menemukan image_UTC_data1700513181420 dan jika kita konversi angka tersebut itu merupakan tanggal yang timestamp sekarang!, untuk mencari tahunya masuk ke https://www.unixtimestamp.com/ dan masukkan angka tersebut (lebih tepatnya itu adalah milimetere unix converter)
+6. Buka hexeditor di google lalu import gambar tersebut dan cari image_utc_Data dengan filter yang tersedia.
+7. Ketika sudah ketemu, kita ubah hex tersebut sesuai dengan 1970:01:01 (dengan website converter tadi) yang berarti 30 30 30 30 31 lalu selanjutnya 0
+8. export dan masukan ke nc lalu cek, dan selamat flag didapatkan
+ 
+

@@ -1,0 +1,10 @@
+answer: picoCTF{3nh4nc3d_d0a757bf}
+
+
+simple,
+
+1. cek dahulu dengan strings grep flag, tetapi tampaknya tidak ada
+2. karena ini file vektor kemungkinan juga harus cek di metadatanya
+3. cek metadata dengan notepad agar mudah terlihat atau nano pun bisa
+4. jika cek terus kebawah, akan muncul kata kata terpisah p i c o disetiap style dan text
+5. gabungkan kalimat flag terpisah tersebut dan submit

@@ -1,0 +1,6 @@
+xxd -e challengefile | xxd -r > stonks.jpg
+
+-e : Convert to little endian
+-r : convert (or patch) hex dump into binary
+
+Basically, this will print out the hexes of challengefile, but in little endian. Then we pipe it to the second command, which will package the piped hex dump into a new file call "stonks.jpg".

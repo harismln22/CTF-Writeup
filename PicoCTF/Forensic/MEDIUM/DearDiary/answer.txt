@@ -1,0 +1,10 @@
+butuh tools
+
+1. extract dulu file gz nya lalu buka tools autopsy
+2. setelah dijalankan copy localhost ke mozilla dan buat case baru
+3. Buat semua default saja dan sesudah itu akan terdapat list-list dan pilih raw
+4. klik analyze dan klik keywoard search sesudahnya
+5. ketik .txt dan tunggu beberapa detik akan keluar semacam unit dan buka unit tersebut melalui ascii
+6. kumpulkan flagnya dari setiap ascii unit dan tamat
+
+answer: picoCTF{1_533_n4m35_80d24b30}
