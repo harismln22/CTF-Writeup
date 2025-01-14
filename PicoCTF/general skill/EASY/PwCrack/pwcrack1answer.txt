@@ -1,0 +1,3 @@
+simple, download script dan encnya sesudah itu baca file level1.py dengan nano.
+Lalu cek bagian kode yang melihatkan passwordnya dan akan terlihat.
+copy password tersebut dan ketik python3 level1.py level1.flag.txt.enc lalu isi password dengan kode yang ditemukan sebelumnya

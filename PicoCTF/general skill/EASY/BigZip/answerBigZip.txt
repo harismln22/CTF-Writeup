@@ -1,0 +1,7 @@
+extract file tersebut dan akan terlihat banyak folder dan file.txt, karena tidak mungkin harus cat grep satu satu, jadinya terdapat cara dengan
+
+    grep -r "pico"  
+
+dan akan terlihat output ini
+folder_pmbymkjcya/folder_cawigcwvgv/folder_ltdayfmktr/folder_fnpfclfyee/whzxrpivpqld.txt:information on the reand brains and books encode picoCTF{gr3p_15_m4g1c_ef8790dc}
+

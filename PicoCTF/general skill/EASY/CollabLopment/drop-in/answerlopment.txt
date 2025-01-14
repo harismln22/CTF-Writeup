@@ -1,0 +1,6 @@
+ini hampir sama seperti commitissues, jadi intinya harus mencari flag yang berada di folder git/feature dengan git
+
+langsung aja ketik git log --all --full-history --
+sesudah itu git show <SHA> -- dari semua hash tadi dan kumpulkan bagian flag menjadi seperti dibawah ini
+
+picoCTF{t3@mw0rk_m@k3s_th3_dr3@m_w0rk_6c06cec1}

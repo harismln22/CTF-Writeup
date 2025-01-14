@@ -1,0 +1,3 @@
+answer: picoCTF{m45h_fl1ng1ng_6f98a49f}
+
+simple, tingga buka kode .py nya lalu cek kode dibagian akhir dan coba masukan satu persatu di input python3 level3.py

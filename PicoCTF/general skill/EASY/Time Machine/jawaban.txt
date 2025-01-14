@@ -1,0 +1,2 @@
+mengecek message dengan git log
+flag: picoCTF{t1m3m@ch1n3_e8c98b3a}

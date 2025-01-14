@@ -1,0 +1,1 @@
+simpel, karena dalam enc_flag terdapat banyak decode untuk base64 jadinya terus decode itu dengan cyberchef (decode dengan from base64) terus menerus hingga mendapatkan flagnya

@@ -1,0 +1,1 @@
+simple, tinggal convert dari hex to ascii dari 0x70, ketika convert sudah terlihat, tinggal picoCTF{(jawaban)}
