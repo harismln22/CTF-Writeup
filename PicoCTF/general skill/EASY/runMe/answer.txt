@@ -1,2 +1,0 @@
-
-simple, tinggal download script python lalu run dengan python3 <file.py>

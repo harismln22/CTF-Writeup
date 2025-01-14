@@ -1,1 +1,0 @@
-simple, tinggal copas nc di cmd sesudah itu masukkan password dari deskripsi yang disampaikan, lalu cari kunci 1 sampai 3 txtnya dan akan ada instruksi.txt yang bisa dilihat dengan cat. Intinya jika ada key tinggal dengan cat, sama juga dengan instruksi

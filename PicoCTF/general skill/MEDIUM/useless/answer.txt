@@ -1,7 +1,0 @@
-picoCTF{us3l3ss_ch4ll3ng3_3xpl0it3d_5657}
-
-Perintah man (manual) dalam CLI (Command Line Interface) digunakan untuk menampilkan manual pages atau halaman manual dari suatu perintah atau program di sistem Unix/Linux. Manual pages ini berisi informasi tentang cara menggunakan perintah atau program, termasuk opsi-opsi yang tersedia, sintaksis, dan contoh penggunaannya.
-
-syntax:
-man [perintah]
-

@@ -1,2 +1,0 @@
-simple, buka level2.py dan cek kodenya, terdapat fungsi yang mengecek jika kode sama dengan passwordnya, passordnya itu tinggal decode dengan, buka cmd lalu ketik python3 dan ketik print(print(chr(0x34) + chr(0x65) + chr(0x63) + chr(0x39)))
-karena hasil dari decodenya tau tinggal isi password dari decode itu

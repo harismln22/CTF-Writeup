@@ -1,4 +1,0 @@
-hanya connect ssh
-ssh -p 60753 ctf-player@titan.picoctf.net
-flag: picoCTF{s3cur3_c0nn3ct10n_8306c99d}
-

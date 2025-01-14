@@ -1,9 +1,0 @@
-picoCTF{fl45h_5pr1ng1ng_cf341ff1}
-
-simple, sama kayak pwcrack3 tetapi terdapat 100 percobaan pass, 
-1. ambil yang sebelum akhir jika coba cara satu persatu
-2. Buat for loop untuk input pos_pw_list
-   a = 0
-   for i in pos_pw_list:
-        user_pw = pos_pw_list[a]
-		user_pw_hash = hash_pw(user_pw)

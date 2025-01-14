@@ -1,6 +1,0 @@
-buka cmd dan copas nc itu,
-lalu akan terlihat kode hex yang perlu didecode, Caranya
-1. Buka cmd baru da ketik python3
-2. lalu ketik print(kode hex tadi)
-3. ketika kode hex diperlihatkan, tinggal copy dengan dari picoCTF yang berada di nc sebelumnya lalu gabungkan >> answer.txt
-

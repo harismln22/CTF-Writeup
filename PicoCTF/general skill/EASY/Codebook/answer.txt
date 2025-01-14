@@ -1,2 +1,0 @@
-simple, tinggal buka cmd dan compile kode python tersebut dengan codebook.txt nya
-(python3 code.py codebook.txt)
