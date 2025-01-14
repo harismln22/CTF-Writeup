@@ -1,0 +1,31 @@
+ada 2 cara, bisa dengan tools online atau cli
+
+from base64 hashing:
+b'd3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzg2a2wzMmsyfQ=='
+
+same hashing again but remove the ' and b' 
+wpjvJAM{jhlzhy_k3jy9wa3k_86kl32k2}
+
+use ROT13 bruteforce:
+picoCTF{caesar_d3cr9pt3d_b204adc6}
+
+
+OR BY
+
+cat interencdec | base64 -d | cut -d "'" -f2 | base64 -d | caesar
+
+urutannya
+1. cat interencded : file hashing         
+   YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6ZzJhMnd6TW1zeWZRPT0nCg==
+
+2. base64 -d: hash from base64
+   b'd3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzg2a2wzMmsyfQ=='
+
+3. cut -d "'" -f2
+   d3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzg2a2wzMmsyfQ==
+
+4. base64 -d
+   wpjvJAM{jhlzhy_k3jy9wa3k_86kl32k2}
+
+5. caesar
+   picoCTF{caesar_d3cr9pt3d_86de32d2}

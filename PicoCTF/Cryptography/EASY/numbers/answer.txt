@@ -1,0 +1,5 @@
+simple, tinggal ke web cipher-identifier
+https://www.dcode.fr/cipher-identifier
+
+sesudah itu cari apa yang cocok dengan dari kode gambar tersebut, dan pakai cipher converter tersebut lalu convert kode tersebut
+PICOCTF{THENUMBERSMASON}

@@ -1,0 +1,9 @@
+1. jadi extract file zip tersebut, lalu akan terdapat .git dan message.py, karena terdapat folder git yang berarti cek bagian log. 
+2. Kita cek bagian log secara keseluruhan dengan
+git log --all --full-history --
+
+3. karena terlalu banyak commit, kita coba cek dulu dari log message.py
+git log message.py
+
+4. Dan ternyata ada flag di bagian authornya
+picoCTF{@sk_th3_1nt3rn_81e716ff}

@@ -1,0 +1,1 @@
+https://thamizhiniyancs.gitbook.io/writeups/v/ctf/2024/pico-ctf/cryptography/custom-encryption

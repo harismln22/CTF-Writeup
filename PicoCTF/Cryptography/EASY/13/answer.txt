@@ -1,0 +1,2 @@
+simple, karena sesuai nama yaitu 13, yang berarti cipher ROT 13, tinggal cari converter cipher lalu decode kode tersebut
+picoCTF{not_too_bad_of_a_problem}

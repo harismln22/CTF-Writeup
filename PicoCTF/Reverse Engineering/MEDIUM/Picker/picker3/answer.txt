@@ -1,0 +1,5 @@
+answer: picoCTF{7h15_15_wh47_w3_g37_w17h_u53r5_1n_ch4rg3_a186f9ac}
+
+Cukup sulit
+1. Ubah salah satu variable dengan write_var, misalkan ubah getRandomNumber menjadi win dan lalu ketik 4, ini terjadi karena di
+   dalam kode terdapat untuk mengubah variable dengan exec dan eval

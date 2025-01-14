@@ -1,0 +1,16 @@
+picoCTF{A_b1t_0f_b1t_sh1fTiNg_07990cd3b6}
+
+sangat sulit.
+
+1. Pahami bit shifting, biner, hex.
+2. Kedua pahami apa itu byte,bit memory
+3. karena ini java yang mempunyai 32 integer bit, berarti pembagiannya menjadi 4 byte dengan 8 bit
+   00000000 00000000 00000000 00000000
+4. bitshifting itu menggeserkan biner bit ke byte awal atau byte akhir
+5. jika geser << 24, maka itu akan mendorong dari byte 4 (akhir 0-7) ke byte awal (25-31)
+   awalnya
+   00000000 00000000 00000000 01010101
+   setelah << 24
+   01010101 00000000 00000000 00000000 
+6. gunakan converter desimal to biner/hex lalu convert lagi ke teks, selamat!
+

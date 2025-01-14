@@ -1,0 +1,24 @@
+ picoCTF{s0m3_m0r3_b1t_sh1fTiNg_89eb3994e}
+operator ~ (NOT)
+
+jika misalkan di dalam biner merupakan angka 1, maka hasilnya akan menjadi angka 0 dan begitu sebaliknya
+Contoh: Jika mask1 = 00000100 (bit ke-2 aktif) dan mask2 = 00000010 (bit ke-1 aktif), maka:
+
+    mask1 | mask2 = 00000110
+    ~(mask1 | mask2) = 11111001
+    
+operator & (AND)
+jika di dalam biner merupakan angka 1 untuk keduanya maka hasilnya 1, tapi jika salah satu atau keduanya 0 maka 0
+CONTOH:
+int a = 6;  // 0110 dalam biner
+int b = 3;  // 0011 dalam biner
+int result = a & b; // hasilnya 0010 dalam biner (2 dalam desimal)
+CONTOH 2:
+  0110 (a = 6)
+& 0011 (b = 3)
+  ----
+  0010 (hasil = 2)
+  
+operasi OR '|'
+
+jika misalkan salah satu atau keduanya merupakan 1 maka hasilnya 1, tetapi jika keduanya 0 maka 0

@@ -1,0 +1,19 @@
+answer: picoCTF{d3bug_f0r_th3_Win_0x100_17712291}
+
+cukup sulit.
+1. jalankan WinAntiDbg.exe (jika dilinux dengan wine) dan ingat outputnya
+2. Install ghidra dan x64debugger
+3. Cek file dbg tersebut dengan ghidra dan lihat apakah itu esp atau rbp, jika file kode tersebut esp maka 32 bit dan jika rbp maka 64 bit
+4. Buka x32 debug dan buka filenya
+5. cari kalimat di ghidra sesuai dengan output tadi
+6. coba run (di x64 debugger)
+7. Akan keluar "this debug is detected and stop" yang berarti kita harus melihat kodenya dengan decompile
+8. coba cari function satu persatu (di ghidra) dan akan terlihat fungsi isDebuggerPresent dengan if(BVar3 == 0) dab sementara elsenya sama output sesuai seperti detected debug tadi
+9. Kita sekarang mengetahui kalau agar debug tidak terdetect maka kita harus membuat BVar3 tersebut menjadi value 0
+10. ingat address if(bvar3) tersebut 00401602
+11. Cari address tersebut di x64debugger
+12. Ketika ketemu, buat breakpoint disitu dan run
+13. ketika sudah run dan berada di breakpoint BVar3, ubah EAX (di kanan layer) menjadi 0 (ini karena TEST adalah if dan sementara EAX,EAX itu adalah BVar3 dan 0)
+14. sesudah itu run lagi dan selanjutnya akan seperti kosong
+15. Buka log di x64 debug dan flag akan terlihat 
+

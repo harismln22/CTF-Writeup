@@ -1,0 +1,2 @@
+buka cmd lalu copas dari nc itu, nanti akan diperlihat semacam quotes yang harus di hash dengan MD5.
+Caranya buka cyberchef lalu copy dari quote yang diberikan lalu paste ke cmd tadi. Lakukan ini sama dengan seperti sebelumnya karena akan hashing 3 kali berturut turut

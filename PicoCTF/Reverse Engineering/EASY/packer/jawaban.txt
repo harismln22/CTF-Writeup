@@ -1,0 +1,21 @@
+https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Reverse_Engineering/packer.md
+
+
+setiap terdapat file executable, coba dengan file out
+
+lalu cek apakah password ditemukan, dan cari juga apakah sudah di pack dengan UPX
+jika iya maka unpack dengan
+upx -d -o unpacked out
+dan cek apakah sesudah unpacked? (di folder)
+
+sesudah itu
+strings -n 8 unpacked | more
+cari passwordnya, akan ditmukan output seperti
+
+Password correct, please see flag: 7069636f4354467b5539585f556e5034636b314e365f42316e34526933535f65313930633366337d
+Access denied
+xeon_phi          <--- possible password
+
+flag yang dituju merupakan hex, lalu gunakan 
+echo '7069636f4354467b5539585f556e5034636b314e365f42316e34526933535f65313930633366337d' | xxd -r -p
+

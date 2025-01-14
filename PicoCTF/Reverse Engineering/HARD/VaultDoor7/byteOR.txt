@@ -1,0 +1,31 @@
+or '|' = penggabungan menjadi byte memory
+Sebuah integer 32-bit direpresentasikan oleh 4 byte, dan setiap byte terdiri dari 8 bit. Jadi totalnya ada 32 bit yang dapat dibagi menjadi 4 bagian (masing-masing bagian berisi 8 bit atau 1 byte).
+
+00000000 00000000 00000000 00000000 = 4 byte
+00000000 = 8 bit / 1 byte
+24-31 bit = byte ke 1
+0-7 bit = byte ke 4 
+
+
+setiap memory itu pasti dari 0-7 (0000000)
+dan 32 bit itu 00000000 00000000 00000000 00000000
+jika kita pindahkan a << 24 itu berarti memindahkan dari memori byte awal (0-7) menjadi paling akhir ke 25-32
+anggap biner a seperti ini 
+00010010 00000000 00000000 00000000
+
+lalu kita tambah dan dorong b << 16 berarti memindahkan memory ke 17-24
+00010010 01001000 00000000 00000000
+
+lalu kita tambag lagi dan dorong huruf c << 8 berarti ke 9-16
+00010010 01001000 00100100 0000000
+
+lalu kita tambah lagi dan kali ini tidak perlu mendorong d karena sudah berada di 1-8
+00010010 01001000 00100100 0000110
+
+sekarang jika kita gabungkan semua dengan '|' maka itu menggabungkan semua menjadi satu memori penuh
+0x41000000 = A
+0x41420000 = B
+0x41424300 = C
+0x41424344 = D
+
+

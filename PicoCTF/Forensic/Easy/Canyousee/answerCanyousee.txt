@@ -1,0 +1,4 @@
+1. Paling simple, tinggal extract sesudah itu coba buka jpg tersebut dengan cat lalu cari seperti berbau encrypt (berada di rfd resource), sesudah itu decrypt dengan cyberchef
+dan ketemu
+picoCTF{ME74D47A_HIDD3N_deca06fb}
+

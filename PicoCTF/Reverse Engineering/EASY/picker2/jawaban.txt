@@ -1,0 +1,15 @@
+Since win is filtered from user input we have to improvise. We could have said ==> print(open('flag.txt').read()), but what if we didn’t know the filename? I decided to pop a shell and cat the flag. (A bit overkill)
+
+└─$ nc saturn.picoctf.net <port>
+==> (lambda os: os.system('sh'))(__import__('os'))
+cat flag*
+picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_0b5f1131}
+
+Flag: picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_0b5f1131}
+
+Filter Fungsi: Fungsi filter(user_input) bertujuan untuk memeriksa apakah masukan pengguna mengandung kata “win”. Jika mengandung, maka fungsi ini mengembalikan False, sehingga masukan tersebut tidak akan dievaluasi lebih lanjut.
+
+Lambda Function: Penggunaan lambda function untuk memanggil os.system('sh') adalah pendekatan kreatif. Lambda function ini memungkinkan pengguna untuk menjalankan perintah shell dengan menghindari filter “win”. Dengan cara ini, pengguna dapat memperoleh akses ke shell dan mengakses flag.
+
+Menggunakan os.system('sh'): Dalam kode, pengguna memanggil perintah shell dengan os.system('sh'). Ini membuka shell interaktif yang memungkinkan pengguna untuk menjalankan perintah shell lainnya, termasuk cat flag* untuk membaca flag.
+Jadi, dengan menggabungkan lambda function dan os.system('sh'), pengguna berhasil mendapatkan flag dari program tersebut.

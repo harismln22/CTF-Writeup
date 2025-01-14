@@ -1,0 +1,48 @@
+load_name: meload nama yang sudah di store dengan store_name
+load_const: menginput atau load sebuah input
+store_name: memasukan nama dari load_const dan load_name (jika dipanggil)
+build_list: membuat list array
+
+misalkan terdapat si_har
+maka pasti itu mulai dari
+load_const h
+: h
+store_name 1 keystr
+'h'
+
+load_const ('_')
+: _
+load_name
+: _h
+store_name 1 keystr
+'_h' 
+
+load_name
+: _h
+load_const
+: a
+store_name 1 keystr
+'_ha'
+
+
+load_name
+: _ha
+load_const
+: r
+store_name
+_har
+
+load_const
+: i
+load name
+: _har
+store_name
+i_har
+
+load_const
+: s 
+load_name
+: i_har
+store_name
+si_har
+

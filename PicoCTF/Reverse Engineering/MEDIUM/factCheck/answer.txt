@@ -1,0 +1,9 @@
+tricky
+
+1. Buka ghidra dan buka bin
+2. cek setiap function nya di decompiler
+3. akan terdapat potongan flag dengan kode decompile assembly dibawah potongan flagnya
+4. karena kita mengetahui sebagian flagnya lagi berada di bagian function itu, buka edb-debugger
+5. Buka bin di debug dan run sekali
+6. buat breakpoint di memory address sesuai yang dighidra di setiap callnya (sesudah potongan flag)
+7. run terus hingga memory "}" dan selamat flag ditemukan

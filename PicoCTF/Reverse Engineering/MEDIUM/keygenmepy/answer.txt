@@ -1,0 +1,70 @@
+answer: picoCTF{1n_7h3_|<3y_of_f911a486}
+
+simple tapi tricky karena butuh pemahaman lanjut untuk membaca kodenya
+
+1. Buka kodenya dan carilah kelemahan atau bagian menarik
+2. jika dipahami,ada bagian kondisi dimana username_complete_trialnya harus sama dengan input user, maka username_trial tersebut akan diencode menjadi hash sha256, dan juga terdapat statis1, statis2, dynamic1. flag yang terlihat hanya di statis1 dan 2.
+3. Karena kita tidak bisa melakukan terlalu banyak karena pilihannya hanya 4, kita buat script.py
+4. masukkan username_trialnya
+    username_trial = "GOUGH"
+5. lalu buat variable hash_result 
+    hash_result = hashlib.sha256(username.encode()).hexdigest()
+6. setelah itu copas statis1 dan statis2 dari flag sebelumnya,
+    key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+    key_part_static2_trial = "}"
+7. Jika kita lihat balik pada saat dimana username di encode hash256, itu terdapat urutan array dari nama yang diurut dahulu.
+8. Kita ikuti juga dengan
+
+    key_part_dynamic1_trial = hash_result[4] + hash_result[5] + hash_result[3] + hash_result[6] + hash_result[2] + hash_result[7] +
+    hash_result[1] + hash_result[8]
+    
+   dari kode sebelumnya
+    def check_key(key, username_trial):
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[3]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[6]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[2]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[7]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[1]:
+                return False
+            else:
+                i += 1
+            if key[i] != hashlib.sha256(username_trial).hexdigest()[8]:
+                return False
+            return True
+9. sesudah itu gabungkan semuanya dengan + lalu jalankan scriptnya dan submit flagnya!
+
+
+kode full lengkap:
+import hashlib
+
+username = "GOUGH"
+hash_result = hashlib.sha256(username.encode()).hexdigest()
+
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+key_part_dynamic1_trial = hash_result[4] + hash_result[5] + hash_result[3] + hash_result[6] + hash_result[2] + hash_result[7] + hash_result[1] + hash_result[8]
+key_part_static2_trial = "}"
+
+flag = key_part_static1_trial + key_part_dynamic1_trial + key_part_static2_trial
+print(flag)
+
+

@@ -1,0 +1,15 @@
+answer: picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_0b5f1131}
+cukup simple tetapi tricky
+
+cara 1:
+1. Buka cek kode py dan amati kodenya
+2. terdapat filter yang jika input merupakan "win" maka akan print 'illegal input'
+3. yang berarti kita harus mencoba trick si filter ini dengan teknik obfuscate
+4. kita bisa coba dengan w\i\n atau w\ni\n tetapi cara ini tidak berhasil karena ini adalah eval yang berarti eksekusi secara langsung
+5. yang terakhir adalah coba dengan memanggil input eval tetapi secara berpisah, seperti eval("w i n()".replace(" ","") yang berarti kita mengganti spasi dengan tidak spasi
+6. masukkan input tersebut dan akan mendapatkan hex, decode hex tersebut dan selamat
+
+cara 2:
+1. langsung pakai ini di input 
+print(open('flag.txt', 'r').read())#
+

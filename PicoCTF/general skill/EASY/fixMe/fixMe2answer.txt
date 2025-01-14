@@ -1,0 +1,1 @@
+simple, tinggal buka script py lalu cari kode yang membuat error, karena disini errornya di if flag = "", tinggal betulkan dari = menjadi ==

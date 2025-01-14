@@ -1,0 +1,10 @@
+simple tetapi tricky
+answer: picoCTF{4_d14m0nd_1n_7h3_r0ugh_6e04440d}
+
+
+1. Cek kode py terlebih dahulu dan cari kode yang menurutmu penting
+2. Lihat di bagian main dan cek bagian fungsi yang dipanggil "eval(user_input + "()")
+3. fungsi tersebut digunakan untuk mengevaluasi pyhton yang diberikan dalam bentuk string
+4. Jadi jika menginput "hallo" itu sama saja seperti hallo() yang akhirnya ini bisa memanggil fungsi jika ada dalam kode
+5. karena kita sudah mengetahui fungsi ini, kita tinggal ketik win dan ini akan memanggil fungsi win()
+6. Hex didapatkan lalu decode dan selamat

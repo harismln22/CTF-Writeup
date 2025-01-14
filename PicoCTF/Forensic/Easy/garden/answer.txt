@@ -1,0 +1,8 @@
+ada dua cara:
+cara 1: dengan cmd strings
+cukup mudah, tinggal buka cmd di directory jpg tersebut lalu ketik strings garden.jpg | grep pico
+dan akan ada muncul flagnya
+
+cara 2: dengan tools online
+buka google dan cari hexedit, masuk ke web tersebut dan upload gambar garden, sesudah itu cari search di filter kanan dengan ketik picoCTF nanti di hex akan terlihat kodenya
+
