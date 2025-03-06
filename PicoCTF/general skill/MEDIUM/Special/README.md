@@ -1,4 +1,7 @@
-picoCTF{5p311ch3ck_15_7h3_w0r57_f578af59}
+picoCTF{Coba sendiri ea}
+
+Requirement: Shell, keep trying.
+Gain: out of box
 
 1. Cobalah untuk berexperiment dengan shellnya seperti coba gunakan apabila memakai (), atau {}, atau syntax exec(), atau eval().
 2. tetapi disini ada yang menarik ketika aku menekan ctrl+d
