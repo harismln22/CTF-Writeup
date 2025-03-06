@@ -1,1 +1,1 @@
-test
+picoCTF{5p311ch3ck_15_7h3_w0r57_f578af59}
