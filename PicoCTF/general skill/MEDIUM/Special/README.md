@@ -7,7 +7,7 @@ picoCTF{5p311ch3ck_15_7h3_w0r57_f578af59}
 
 kita menemukan kode dari shell ini
 
-3. tapi ls tidak bisa disini
+3. tapi cat tidak bisa dilakukan di shell disini
 
 ![nope](https://github.com/user-attachments/assets/dee41b70-c976-457a-8525-0a46164c14f9)
 
@@ -19,7 +19,7 @@ kita menemukan kode dari shell ini
 
 6. karena tidak banyak yang kita bisa lakukan di shell ini, bagaimana kalau kita mencari flag dengan dari terminal python? karena shell tersebut adalah python, kita coba akses compilernya
 
-![akses compiler](https://github.com/user-attachments/assets/f0058383-7baa-42c6-9e3b-4f831ef6f152)
+![akses compiler](https://github.com/user-attachments/assets/863fb088-1d11-4545-821b-fb646d64d3fa)
 
 
 7. ini membuat mencari flag sangat mudah, kita tinggal memakai import os dan syntax os dari python tersebut.
