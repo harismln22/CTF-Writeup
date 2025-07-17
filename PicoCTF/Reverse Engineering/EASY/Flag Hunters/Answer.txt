@@ -21,7 +21,7 @@ Skills Gained: Code reading, Code Flow
 5. Maksud dari diatas adalah jika input user mempunyai sebuah titik koma (;) maka inputnya ini bisa terjadi dua kali atau lebih tepatnya si user bisa menginput suatu fungsi pada file kode python ini karena kode tersebut membaca input hingga bertemu titik koma.
 6. Jadi misalkan user menginput seperti ini: 
 	test;blablabla 
-	seharusnya string itu terbaca hingga blablabla, tapi karena titik koma maka input tersebut terbagi menjadi dua yang pertama adalah test dan keduanya adalah blablabla.
+	seharusnya string itu terbaca hingga blablabla, tapi karena titik koma maka input tersebut terbagi menjadi dua. yang pertama adalah test dan keduanya adalah blablabla.
 7. Jika diamati lagi pada kode paling atas, ada terdapat flag tapi dimana itu di dalam lirik variabel 'secret_intro', lalu bagaimana cara mengeprint bagian flag tersebut?
 8. Caranya dengan dari salah satu else if ini
 	elif re.match(r"RETURN [0-9]+", line):
