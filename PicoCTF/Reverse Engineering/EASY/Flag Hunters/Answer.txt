@@ -1,0 +1,35 @@
+Author: syreal
+Description
+Lyrics jump from verses to the refrain kind of like a subroutine call. 
+There's a hidden refrain this program doesn't print by default. 
+Can you get it to print it? There might be something in it for you. 
+The program's source code can be downloaded here. 
+Connect to the program with netcat: 
+nc verbal-sleep.picoctf.net 60492
+
+Skills Gained: Code reading, Code Flow
+
+1. RE challenge kali ini bukan menganalisis file berbentuk 'exe' tapi sebuah kode python.
+2. Setelah mengamati kode tersebut. Ada bagian baris kode yang membuat input user ini tidak disanitasi dan membuat user bisa lompat ke bagian 'tertentu', dan ini di bagian:
+	elif re.match(r"CROWD.*", line):
+        crowd = input('Crowd: ')
+        song_lines[lip] = 'Crowd: ' + crowd
+        lip += 1
+3. jika mengamati kode di awal fungsi reader. Terdapat variabel lip dan lip ini adalah indeksnya dari lirik sebuah lagu.
+4. Dan apa yang bikin input ini tidak tersanitasi? karena bagian kode ini juga:
+	for line in song_lines[lip].split(';'):
+5. Maksud dari diatas adalah jika input user mempunyai sebuah titik koma (;) maka inputnya ini bisa terjadi dua kali atau lebih tepatnya si user bisa menginput suatu fungsi pada file kode python ini karena kode tersebut membaca input hingga bertemu titik koma.
+6. Jadi misalkan user menginput seperti ini: 
+	test;blablabla 
+	seharusnya string itu terbaca hingga blablabla, tapi karena titik koma maka input tersebut terbagi menjadi dua yang pertama adalah test dan keduanya adalah blablabla.
+7. Jika diamati lagi pada kode paling atas, ada terdapat flag tapi dimana itu di dalam lirik variabel 'secret_intro', lalu bagaimana cara mengeprint bagian flag tersebut?
+8. Caranya dengan dari salah satu else if ini
+	elif re.match(r"RETURN [0-9]+", line):
+        lip = int(line.split()[1])
+9. kode else if inilah yang bisa kita membuat print lirik tersebut menjadi ke lirik awal, tapi gimana caranya?
+10. Caranya dengan cara titik koma tadi, cobalah menginput: test;RETURN 0 (atau test;RETURN 3 jika secara spesifik ke flag langsung)
+11. dengan input ini kita bisa melompat lirik ke paling awal karena kita membuat indeks tersebut menjadi 0 (karena 'line' pada elif tersebut yang membuat antara 0 hingga 9 berhasil)
+
+
+
+flag: picoCTF{70637h3r_f0r3v3r_509142d4}
