@@ -1,1 +1,0 @@
-flag: picoCTF{tw0_1$_pr!m3f995d086}
