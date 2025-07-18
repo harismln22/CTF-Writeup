@@ -1,0 +1,28 @@
+Author: Taylor McCampbell
+
+This problem is not solvable with the webshell.
+Description
+The Rust saga continues? I ask you, can I borrow that, 
+pleeeeeaaaasseeeee? 
+Download the Rust code here. 
+
+Skills Gained: Rust "Borrow" system.
+
+1. Sama seperti sebelumnya yang di Rust fixme 1, sebisa mungkin paham dikit mengenai rust, dan sekarang coba memahami 'borrow' pada rust.
+2. di dalam kode tersebut sebenarnya agak menjelaskan dikit/hint dimana kode yang harus dibetulkan.
+3. Karena deskripsi pada tantangan ini adalah terdapat kata 'borrow' kemungkinan kita harus reference dari main ke fungsi.
+4. caranya adalah dengan syntax 'mut'. arti dari mut ini adalah mutable (bisa diubah). Maksud dari bisa diubah disini adalah kalau sistem rust itu tidak bisa mengubah value secara asal. Contoh:
+	let angka1 = 10;
+	angka1 = 15; <- error
+
+   cara ini tidak bisa karena rust mempunyai desain sistem dimana kita harus memakai syntax 'mut' agar perubahan nilai bisa diubah.
+   jadi caranya dengan:
+   	let mut angka1 = 10;
+   	angka1 = 15;  
+5. dengan mut ini, seharusnya kita bisa 'borrow' ke fungsi dari main. tambahkan mut pada sebelum party_foul.
+6. lalu pada decrypt pada saat passing, tambahkan &mut pada sebelum party_foul juga.
+7. dan pada fungsi decrypt, tambahkan juga &mut sebelum String pada parameter fungsi tersebut.
+8. lalu run dengan cargo run
+
+
+flag: picoCTF{4r3_y0u_h4v1n5_fun_y31?}
