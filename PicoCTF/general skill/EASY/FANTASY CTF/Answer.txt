@@ -1,0 +1,3 @@
+Ya.. yang ini tinggal kalian enter dan mengikuti jawaban yang benar aja dari peraturan picoctf. tapi kalau kalian malas karena panjang. Ini flagnya
+
+flag: picoCTF{m1113n1um_3d1710n_8dcbda00}
