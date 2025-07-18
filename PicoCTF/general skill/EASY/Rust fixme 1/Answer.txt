@@ -1,0 +1,18 @@
+Author: Taylor McCampbell
+
+This problem is not solvable with the webshell.
+Description
+Have you heard of Rust? 
+Fix the syntax errors in this Rust file to print the flag! 
+Download the Rust code here. 
+
+Skills Gained: Rust Knowledge.
+
+1. Sebisa mungkin pelajari dikit bahasa rust dulu (agar lebih paham)
+2. dari kode rust tersebut sudah menunjukkan dimana bagian error yang harus diperbaiki.
+3. pertama, dari titik koma seperti bahasa program spesifik lainnya. kedua, seharusnya bukan ret tapi return. ketiga, print di rust adalah '{}' dan ubah pada bagian :?
+4. Cara ngerun nya adalah dengan cara mengetik 'cargo run' dan bukan rustc <file.rs> (karena file ini dibuat dari cargo; yang biasanya untuk projek besar)
+
+
+
+flag: picoCTF{4r3_y0u_4_ru$t4c30n_n0w?}
