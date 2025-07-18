@@ -1,0 +1,19 @@
+Author: Taylor McCampbell
+
+This problem is not solvable with the webshell.
+Description
+Have you heard of Rust? 
+Fix the syntax errors in this Rust file to print the flag! 
+Download the Rust code here. 
+
+Skills gained: Unsafe rust operation knowledge.
+
+1. yang satu ini sangat tidak sulit, karena di dalam kode ini hanya menunjukkan rust mengenai "unsafe" operation.
+2. Apa maksudnya unsafe itu? karena di rust itu menyebutkan kalau cukup aman dalam hal memori, tidak mungkinnya terjadi buffer overflow, atau memory leak, atau null pointer.
+3. dan dengan unsafe ini bertujuan kalau dibagian blok kode tersebut menandakan tidak aman karena kita bisa mengubah/mengakses pointer yang kemungkinan berakibat null. Atau membuat rust ini memanggil dari kode C ke Rust.
+4. jadi unsafe itu seperti mengatakan "saya tahu apa resikonya, biarkan saya mematikan penjagaan keamanan ini sejenak". Rust ini tidak buruk, hanya saja programmer harus menjamin keamanannya secara manual.
+5. Biasanya kasus apa saja yang membutuhkan unsafe pada rust ini? biasanya jika butuh mengakses hardware (dalam pembuatan kernel contohnya redox os) atau web browser engine seperti servo, karena perlu mengakses hardware grafis gpu.
+6. Oh dan untuk tantangan ini, hapus saja komen bagian unsafenya 
+
+
+flag: picoCTF{n0w_y0uv3_f1x3d_1h3m_411}
