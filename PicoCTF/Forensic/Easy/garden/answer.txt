@@ -1,6 +1,6 @@
 ada dua cara:
 cara 1: dengan cmd strings
-cukup mudah, tinggal buka cmd di directory jpg tersebut lalu ketik strings garden.jpg | grep pico
+buka cmd di directory jpg tersebut lalu ketik strings garden.jpg | grep pico
 dan akan ada muncul flagnya
 
 cara 2: dengan tools online
