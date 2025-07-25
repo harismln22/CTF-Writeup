@@ -16,7 +16,8 @@ Skills gained: Extract dd, Strings
 5. ya setelah dijalankan dan hasil dari strings tersebut memunculkan banyak sekali flag yang berbeda. Sekarang mana yang asli?
 6. tapi ini mungkin karena .dd itu biasanya bersifat raw atau mentah, berarti bagaimana kalau kita coba cek yang biasanya bisa dikatakan versi 'bersihnya'?
 7. extract dd tersebut menjadi .img dengan cara:
-	dd if=disko-2.dd of=part1.img bs=512 skip=2048 count=51200
+
+		dd if=disko-2.dd of=part1.img bs=512 skip=2048 count=51200
 
 9. kita coba lagi dengan Strings, dan hasilnya:
 <img width="406" height="238" alt="strings part1" src="https://github.com/user-attachments/assets/ecf24677-5865-426f-950b-c51c4c2a6a9a" />
