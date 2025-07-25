@@ -7,7 +7,7 @@ Download the disk image here.
 kategori: Forensik
 Skills gained: Strings command
 
-1. terdapat banyak cara untuk menyelesaikan ini, tetapi aku memakai cara paling simpel
+1. terdapat banyak cara untuk menyelesaikan ini, tetapi cara paling mudahnya
 2. Extract file .dd.gz dengan gunzip atau gzip -dk <filename>
 3. Lalu gunakan strings di cli pada file .dd
 

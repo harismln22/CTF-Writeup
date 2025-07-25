@@ -1,6 +1,6 @@
-picoCTF{A_b1t_0f_b1t_sh1fTiNg_07990cd3b6}
-
-sangat sulit.
+Author: Mark E. Haase
+Description
+This vault uses bit shifts to convert a password string into an array of integers. Hurry, agent, we are running out of time to stop Dr. Evil's nefarious plans! The source code for this vault is here: VaultDoor7.java
 
 1. Pahami bit shifting, biner, hex.
 2. Kedua pahami apa itu byte,bit memory
@@ -12,5 +12,7 @@ sangat sulit.
    00000000 00000000 00000000 01010101
    setelah << 24
    01010101 00000000 00000000 00000000 
-6. gunakan converter desimal to biner/hex lalu convert lagi ke teks, selamat!
+6. gunakan converter desimal to biner/hex lalu convert lagi ke teks, dan hasil flag nya akan menjadi seperti ini:
+   flag: picoCTF{A_b1t_0f_b1t_sh1fTiNg_07990cd3b6}
+
 

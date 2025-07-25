@@ -1,5 +1,3 @@
-picoCTF{Coba sendiri ea}
-
 Requirement: Shell, keep trying.
 Gain: out of box
 
