@@ -8,6 +8,7 @@ Skills gained: Extract dd, Strings
 # LANGKAH
 1. File tersebut merupakan ekstensi .dd yang dimana bisa dilakukannya mount
 2. di deskripsi bertuliskan yang linux, cek dengan fdisk -l <file.dd>
+	
 	hasil:
 	Device      Boot Start    End Sectors Size Id Type
 	disko-2.dd1       2048  53247   51200  25M 83 Linux
