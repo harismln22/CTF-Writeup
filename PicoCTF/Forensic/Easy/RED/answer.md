@@ -10,10 +10,12 @@ category: Stegonography
 2. karena ini file berbentuk gambar. Kita bisa mengecek metadata terlebih dahulu dengan exiftool atau strings.
 
 hasil dari strings:
+
 <img width="329" height="330" alt="lirik red 2" src="https://github.com/user-attachments/assets/6987ecfe-1908-4f29-a71c-fd8911a97afa" />
 
 
 hasil dari metadata:
+
 <img width="1426" height="579" alt="metadata red" src="https://github.com/user-attachments/assets/41c49741-ea92-4e67-81f9-d6df5dc539b4" />
 
 
