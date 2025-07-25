@@ -10,8 +10,11 @@ Skills gained: Extract dd, Strings
 2. di deskripsi bertuliskan yang linux, cek dengan fdisk -l <file.dd>
 	
 	hasil:
+
 	Device      Boot Start    End Sectors Size Id Type
+
 	disko-2.dd1       2048  53247   51200  25M 83 Linux
+
 	disko-2.dd2      53248 118783   65536  32M  b W95 FAT32
 
 3. terdapat dua 'os' dalam satu .dd tersebut, tapi fokuskan yang linux.
