@@ -7,15 +7,9 @@ Skills gained: Extract dd, Strings
 
 # LANGKAH
 1. File tersebut merupakan ekstensi .dd yang dimana bisa dilakukannya mount
-2. di deskripsi bertuliskan yang linux, cek dengan fdisk -l <file.dd>
-	
-	hasil:
+2. di deskripsi bertuliskan yang linux, cek dengan fdisk -l <file.dd>. Hasil:
+<img width="581" height="278" alt="fdisk -l" src="https://github.com/user-attachments/assets/f615e50c-84f1-47fe-836d-0fcdf3fa120b" />
 
-	Device      Boot Start    End Sectors Size Id Type
-
-	disko-2.dd1       2048  53247   51200  25M 83 Linux
-
-	disko-2.dd2      53248 118783   65536  32M  b W95 FAT32
 
 3. terdapat dua 'os' dalam satu .dd tersebut, tapi fokuskan yang linux.
 4. karena ini forensik, kemungkinan besar bisa di cek dengan 'Strings'
