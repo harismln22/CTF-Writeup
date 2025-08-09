@@ -12,4 +12,9 @@ Skills gained: Android studio, logcat
 6. buka menu, view -> Tool Windows -> Logcat
 7. lihat hasil log yang tertera (bisa pakai filter "pico")
 
+<img width="1360" height="331" alt="hasil hp flag" src="https://github.com/user-attachments/assets/f4fe1c17-8fe5-4877-88ef-5e6c925fe7a0" />
+
+
+
+
 flag: picoCTF{a.moose.once.bit.my.sister}
