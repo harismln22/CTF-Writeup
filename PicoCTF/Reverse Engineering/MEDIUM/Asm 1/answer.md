@@ -44,6 +44,9 @@ je (jump if equal): Lompat jika A == B
 
 jne (jump if not equal): Lompat jika A != B
 
+add : penambahan A dan B
+
+sub : pengurangan A dan B
 
 # Flag
 flag: 0x6e8
