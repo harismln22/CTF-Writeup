@@ -73,3 +73,7 @@ perhitungan xor:
 	0x375
 	0x00000375
 
+# Flag
+0x375
+
+
