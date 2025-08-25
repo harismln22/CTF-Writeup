@@ -26,7 +26,7 @@ Diff: Easy
 <img width="1063" height="420" alt="gobuster2" src="https://github.com/user-attachments/assets/b83b23bb-e2bd-4367-b1b0-e8202d315481" />
 
 
-6. hasilnya sama aja? coba dengan nikto 
+6. tidak ada hasil? coba dengan nikto 
     
 <img width="1919" height="356" alt="nikto" src="https://github.com/user-attachments/assets/e908b0b8-3fdb-40a7-a4b5-10b2b2422411" />
 
