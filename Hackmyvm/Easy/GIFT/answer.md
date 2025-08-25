@@ -1,4 +1,6 @@
 # Title, description, difficulty.
+<img width="583" height="639" alt="Screenshot at 2025-08-25 06-54-08" src="https://github.com/user-attachments/assets/4ffd76ea-8c3b-4bbb-8008-b0d141f20c36" />
+
 GIFT
 
 Diff: Easy
