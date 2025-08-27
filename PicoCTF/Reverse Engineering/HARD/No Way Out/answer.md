@@ -14,9 +14,9 @@ Put this flag in standard picoCTF format before submitting. If the flag was h1_1
 5. Untuk mendapatkan flag, katanya kita bisa harus keluar dari tempat ini, tetapi meskipun kita udah ke atas tangga tetap saja tidak bisa karena terdapat dinding penghalang.. yang berarti antara kita harus menghapus dinding tersebut, atau membuat karakter kita menembus atau lompat tinggi.
 6. Saatnya membuka dnSpy lalu bukalah file file di dalam pico_data. Biasanya di folder ini yang menyimpan semua dari game tersebut (untuk engine unity)
 7. di dalam pico_data terdapat level0. Ini biasanya layer awal atau scene pertama awal permainan. Cobalah cek dengan strings
-
-
 8. hasilnya ada file dari model-model yang dipakai, tapi lihat ke paling akhir.
+
+<img width="489" height="374" alt="strings level0" src="https://github.com/user-attachments/assets/4e40e022-0764-4014-9136-8b5af5774e66" />
 
 9. Terdapat kata "escape" ketika kita masuk awal game tersebut, dan juga terdapat kata welcome to unity.. sepertinya ini hanya template kode awal ketika membuka unity
 10. sekarang kita masuk ke folder managed dan buka dnSpy.
@@ -24,12 +24,18 @@ Put this flag in standard picoCTF format before submitting. If the flag was h1_1
 12. untuk sekarang cobalah cari file yang mengontrol pergerakan player, dan tepatnya pada di file Assembly-CSharp.dll 
 13. sekarang kita coba cari kode/variabel mana yang membuat player ini loncat atau bergeraknya. Biasanya dalam game penamaan loncat itu adalah antara jump atau gravity.
 14. Tapi.. biasanya yang membuat karakter itu terbatas (dalam hal lompat) dimana ada terdapat variabel true/false yang biasanya isGrounded atau Ground.
-
-
 15. disini kita menemukan if player loncat DAN player bergerak DAN berada di tanah DAN tidak sedang di tangga, maka pergerakan atas bawah akan diatur oleh jumpspeednya.
-16. dari sini kita bisa membuat bagaimana jika kita menghapus isGrounded, karena if tersebut menunjukkan kalau loncat tersebut tidak bisa berkali kali dan hanya bisa sekali kalau pada saat si karakternya di tanah doang.
+
+<img width="974" height="604" alt="AWAL KETEMU GROUNDED" src="https://github.com/user-attachments/assets/701c07d6-b0ac-4cdc-bd8a-232b2dda73f1" />
+
+16. dari sini kita bisa menghapus isGrounded, karena if tersebut menunjukkan kalau loncat tersebut tidak bisa berkali kali dan hanya bisa sekali kalau pada saat si karakternya di tanah doang.
+
+<img width="1248" height="718" alt="HAPUS GROUND" src="https://github.com/user-attachments/assets/1cae2f1d-94e6-4f71-944c-b84d04bcfcd6" />
+
 
 17. Hapus isGrounded tersebut, lalu klik file, save module dan ok. Lalu buka lagi gamenya dan cobalah loncat terus terus hingga ke flag putih tersebut.
+
+<img width="1679" height="736" alt="HASIL" src="https://github.com/user-attachments/assets/622eccda-02f9-4834-927e-556af6880019" />
 
 
 # Flag
