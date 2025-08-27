@@ -3,6 +3,8 @@ Author: Kris
 Description
 Put this flag in standard picoCTF format before submitting. If the flag was h1_1m_7h3_f14g submit picoCTF{h1_1m_7h3_f14g} to the platform. Windows game, Mac game Use password picoctf to unzip archives.
 
+Skills Gained: dnSpy, reverse engineering Unity Engine
+
 # Langkah Langkah
 1. install file di link tersebut
 2. terdapat file seperti unity player.. berarti engine game nya udah pasti unity
@@ -37,6 +39,6 @@ Put this flag in standard picoCTF format before submitting. If the flag was h1_1
 
 <img width="1679" height="736" alt="HASIL" src="https://github.com/user-attachments/assets/622eccda-02f9-4834-927e-556af6880019" />
 
-
+(Ternyata flag tersebut sudah ditemukan pada saat strings level0, tetapi ya karena sebelumnya tidak pasti apakah itu cuman sekadar welcome saja atau flag beneran.)
 # Flag
 flag: picoCTF{WELCOME_TO_UNITY!!}
