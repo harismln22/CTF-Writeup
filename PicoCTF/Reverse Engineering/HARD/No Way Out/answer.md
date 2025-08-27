@@ -30,7 +30,7 @@ Put this flag in standard picoCTF format before submitting. If the flag was h1_1
 
 16. dari sini kita bisa menghapus isGrounded, karena if tersebut menunjukkan kalau loncat tersebut tidak bisa berkali kali dan hanya bisa sekali kalau pada saat si karakternya di tanah doang.
 
-<img width="1248" height="718" alt="HAPUS GROUND" src="https://github.com/user-attachments/assets/1cae2f1d-94e6-4f71-944c-b84d04bcfcd6" />
+<img width="466" height="123" alt="FIX HAPUS GROUND" src="https://github.com/user-attachments/assets/059e298b-bd58-4d1f-b2e9-4ff48063b342" />
 
 
 17. Hapus isGrounded tersebut, lalu klik file, save module dan ok. Lalu buka lagi gamenya dan cobalah loncat terus terus hingga ke flag putih tersebut.
