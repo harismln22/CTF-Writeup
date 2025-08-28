@@ -1,6 +1,8 @@
 Author: LT 'syreal' Jones
+
 Description
 Can you get the flag? 
+
 Reverse engineer this binary.
 
 Skills Gained: Deeper assembly, libs_start_main
