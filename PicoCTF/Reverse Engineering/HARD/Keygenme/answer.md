@@ -72,5 +72,6 @@ Skills Gained: Deeper assembly, libs_start_main
 17. Kenapa ketika membaca register rbp dikurang 0x30 ini bisa memunculkan flag, itu karena rbp itu adalah merujuk ke stack saat ini yang dimana sudah menghasilkan semua hasil flag MD5 disebelumnya (for sebelumnya), lalu setiap iterasi ++ dari local_c0 untuk membandingkan dengan param1 (input user) per karakter. Yang berarti disini kalau kita break di bagian acStack, kita akan membaca acStack[local_c0] yang sudah ter iterasi penuh (atau string flag penuh), yang berarti kita membaca string (flag) yang sudah dipenuhi dari setiap iterasi untuk dibandingkan (strcmp) dengan input user (param_1)
 
         disini jika kita coba akses dari -0x10 sampai 0x30. Kita bisa lihat kalau kita mendapatkan string flag karakter per karakter karena loop iterasi 
-        <img width="634" height="489" alt="langkah flag" src="https://github.com/user-attachments/assets/114951ff-6aa3-4ee0-b4cd-1d7b7043b99d" />
+
+    <img width="634" height="489" alt="langkah flag" src="https://github.com/user-attachments/assets/114951ff-6aa3-4ee0-b4cd-1d7b7043b99d" />
 
