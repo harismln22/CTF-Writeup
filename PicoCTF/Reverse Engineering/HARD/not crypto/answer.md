@@ -61,3 +61,6 @@ Skills gained: deeper assembly checking function
 7. Jika gdb kalian sudah gef, maka kalian bisa start saja langsung cek hasil rdi di bagian atas agar langsung melihat flagnya
  
 <img width="1096" height="719" alt="(10) hasil flag gef" src="https://github.com/user-attachments/assets/867381eb-cf8c-4909-b3b9-edabcb482088" />
+
+# Flag
+flag: picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}
