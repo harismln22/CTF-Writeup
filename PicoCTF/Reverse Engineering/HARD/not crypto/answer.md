@@ -26,7 +26,7 @@ Skills gained: deeper assembly checking function
 
 <img width="315" height="121" alt="(5) memcmp awal" src="https://github.com/user-attachments/assets/f25a5db9-c781-468b-b675-e1c64f800205" />
 
-7. kalian bisa menjalankan gdb dengan start dimulai dari MEMCMP
+7. kalian bisa menjalankan gdb dengan start dimulai dari memcmp@plt (atau dari info functions)
 
 <img width="1662" height="222" alt="(6) dalam gdb main" src="https://github.com/user-attachments/assets/d4927df6-acbe-4354-ae51-26a3c5fdcf17" />
 
