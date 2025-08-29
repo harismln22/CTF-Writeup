@@ -9,12 +9,17 @@ Skills Gained: TocTou vulnerability
 
 # Langkah Langkah
 1. login ke ssh tersebut lalu cek dengan ls
-2. Terdapat binary .txtreader, lalu flag.txt dan src.cpp. Coba cek sourcenya terlebih dahulu
-3. isi dari .cpp ini adalah untuk membaca file sesuai dengan pemiliknya (root atau user biasa. Tapi file flag.txt ini adalah pemilik root), tapi ada yang menarik dari ini
 
+<img width="315" height="46" alt="lss" src="https://github.com/user-attachments/assets/31076c94-59cc-4f3e-9555-a7e01cdb9ffb" />
 
-4. Isi dari dibagian ini.
+2. Terdapat binary .txtreader, lalu flag.txt dan src.cpp. Coba cek sourcenya terlebih dahulu (src.cpp)
+3. isi dari .cpp ini adalah untuk membaca file sesuai dengan pemiliknya (root atau user biasa. Tapi file flag.txt ini adalah pemilik root).
 
+<img width="763" height="832" alt="SRC cpp" src="https://github.com/user-attachments/assets/d39a08f2-09f8-432f-881e-07fa0eba0ab8" />
+
+4. Isi dari bagian ini yang menarik.
+
+<img width="742" height="365" alt="MENARIK 2" src="https://github.com/user-attachments/assets/8dc96b2b-16cb-4e42-b8e2-5379766aff00" />
 
 5. Karena terdapat kondisi yang dimana jika izin pemilik file tersebut dan user yang sedang di login ssh ini tidak sama (jadi maksudnya bukan sesama root atau bukan sesama user biasa). Maka dia akan menghentikan programnya sebelum menuju ke file.is.open()
 6. Yang berarti sudah pasti kalau kita harus menjadi root terlebih dahulu agar bisa membaca flag.txt nya.. tapi, apakah benar?
@@ -44,4 +49,7 @@ Skills Gained: TocTou vulnerability
 		for i in {1..30}; do ./txtreader tukar;done
 16. Jalankan. Jika sudah dijalankan tetapi masih belum terlihat flagnya, bisa ubah 30 jadi 50 atau terus jalankan lagi dan lagi.
 
+<img width="678" height="646" alt="flag hasil" src="https://github.com/user-attachments/assets/6746433e-1dcb-4f6b-b149-b60e3fa05eed" />
 
+# Flag
+flag: picoCTF{ToctoU_!s_3a5y_2075872e}
