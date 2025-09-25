@@ -10,7 +10,7 @@ The name of the game is speed. Are you quick enough to solve this problem and ke
 3. Yang kita lakukan ini hanyalah cara analisis statik, bagaimana kalau dinamis? buka gdb
 4. Karena kita tahu fungsi fungsi sebelumnya pada ghidra, kita bisa ketik start dan break di main terlebih dahulu
 5. Lalu jalankan x/64i $rip untuk mencari alamat print_flag(). Jika ketemu langsung saja break di alamat itu dan klik c agar lanjut.
-6. Jika dijalankan x/64i $rip lagi, akan terlihat alamat untuk <flag>. Karena alamat flag sudah terlihat, bisa melakukan x/s <alamat flag>
+6. Jika dijalankan x/64i $rip lagi, akan terlihat alamat untuk <flag>. Karena alamat flag sudah terlihat, break di bagian <flag> lalu bisa melakukan x/s <alamat flag>
 
 <img width="1068" height="211" alt="perintah next flag" src="https://github.com/user-attachments/assets/100cc82c-519d-4b0f-aa09-9c808c86a018" />
 
